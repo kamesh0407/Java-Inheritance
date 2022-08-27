@@ -1,0 +1,49 @@
+2.Multilevel inheritance
+
+
+
+package main1;
+class University{
+	void university() {
+		System.out.println("Anna university");
+	}
+}
+class College extends University{
+	void college() {
+		System.out.println("Jansons Institute of Technology");
+	}
+}
+class Department extends College{
+	void department() {
+		System.out.println("CSE Department");
+	}
+}
+class Section extends Department{
+	void section() {
+		System.out.println("A section");
+	}
+}
+class Name extends Section{
+	void name() {
+		System.out.println("Kamesh R");
+	}
+}
+class Main{
+ public static void main(String[] args) {
+	Name obj=new Name();
+	obj.name();
+	obj.section();
+	obj.department();
+	obj.college();
+	obj.university();
+}
+}
+
+
+OUTPUT:
+
+Kamesh R
+A section
+CSE Department
+Jansons Institute of Technology
+Anna university

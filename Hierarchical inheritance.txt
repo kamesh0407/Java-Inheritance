@@ -1,0 +1,37 @@
+1.Hierarical
+
+
+package bootcamp;
+class Hiera {
+	void sajith() {
+		System.out.println("Sajith:I have two kids");
+	}
+}
+class Sonn extends Hiera{
+	void Aadhi() {
+		System.out.println("Aadhi:Son of sajith");
+	}
+}
+class Son extends Hiera{
+	void Harshith() {
+		System.out.println("Harshith:Son of sajith");
+	}
+}
+
+class Main {
+	public static void main (String[] args) {
+		Son obj=new Son();
+		obj.Harshith();
+		
+		Sonn obj1=new Sonn();
+		obj1.Aadhi();
+		obj1.sajith();
+	}
+}
+
+OUTPUT:
+
+
+Harshith:Son of sajith
+Aadhi:Son of sajith
+Sajith:I have two kids

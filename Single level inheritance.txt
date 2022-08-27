@@ -1,0 +1,25 @@
+package main1;
+class Names {
+	void name() {
+		System.out.println("My name is Kamesh. ");	
+	}
+}
+class Place extends Names{
+	void place() {
+		System.out.println("From Tiruppur, Tamilnadu.");
+	}
+}
+class Single {
+	public static void main(String[] args) {
+		Place obj=new Place();
+		obj.name();
+		obj.place();
+	}
+
+}
+
+
+OUTPUT:
+
+My name is Kamesh. 
+From Tiruppur, Tamilnadu.
